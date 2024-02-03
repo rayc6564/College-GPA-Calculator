@@ -3,7 +3,6 @@ public class GPA {
     private int hours;
     private int quantityPoint;
     private String name;
-    private float finalGPA;
 
     public GPA(String name, int hours, int GPA, int quantityPoint){
         this.name = name;
@@ -25,10 +24,6 @@ public class GPA {
 
     public String getName() {
         return name;
-    }
-
-    public float getFinalGPA() {
-        return finalGPA;
     }
 
     public void setGPA(int GPA) {

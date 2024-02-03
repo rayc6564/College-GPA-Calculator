@@ -19,21 +19,25 @@ public class Main {
             System.out.println("2. Modify Classes");
             System.out.println("3. Remove Classes");
             System.out.println("4. Display Classes");
-            System.out.println("5. Finished");
+            System.out.println("5. Use Recent GPA and This Semester GPA to Find Out Current GPA");
+            System.out.println("6. Finished");
             choice = sc.nextInt();
             System.out.println();
             switch (choice){
                 case 1:
-                    calculate.add_grade();
+                    calculate.addClass();
                     break;
                 case 2:
-                    calculate.modify_grade();
+                    calculate.modifyClass();
                     break;
                 case 3:
-                    calculate.remove_class();
+                    calculate.removeClass();
                     break;
                 case 4:
                     calculate.display();
+                    break;
+                case 5:
+                    calculate.twoGPA();
                     break;
                 default:
                     System.out.println("Not One Of The Options");
@@ -41,7 +45,7 @@ public class Main {
                     
             }
 
-        }while(choice != 5);
+        }while(choice != 6);
         System.out.println();
         System.out.println("Done");
         System.out.println();
